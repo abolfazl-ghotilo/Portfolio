@@ -5,12 +5,51 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Portfolio</title>
     <link rel="stylesheet" href="../dist/style.css">
+    <link rel="stylesheet" href="../dist/home.css">
 </head>
-<body id="particles-js" class="w-full h-full bg-bg overflow-hidden">
+<body id="particles-js" class="w-full h-screen bg-bg overflow-hidden">
     <main class="container">
-
+        <header class="flex items-center justify-between py-5">
+            <div class="flex items-center gap-3">
+                <svg width="34" height="34" viewBox="0 0 34 34" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path fill-rule="evenodd" clip-rule="evenodd" d="M25.5 0H17V8.5H8.5H0V17V25.5V34H8.5H17V25.5H25.5H34V17V8.5V0H25.5ZM8.5 25.5H17V17H25.5V8.5H17V17H8.5V25.5Z" fill="white"/>
+                    </svg>                    
+                    <h1 class="text-white text-2xl font-Fira">Abolfazl</h1>                    
+            </div>
+            <div id="humbermenu" class="flex flex-col items-end gap-1">
+                <hr class="w-9 h-1 bg-white rounded-sm">
+                <hr class="w-5 h-1 bg-white rounded-sm">
+            </div>
+        </header>
+        <nav class="hidden flex-col px-8 py-4 w-full h-screen fixed z-50 bg-bg bottom-0 left-0 top-0">
+            <section class="flex items-center justify-between">
+                <div class="flex gap-3">
+                    <svg width="34" height="34" viewBox="0 0 34 34" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path fill-rule="evenodd" clip-rule="evenodd" d="M25.5 0H17V8.5H8.5H0V17V25.5V34H8.5H17V25.5H25.5H34V17V8.5V0H25.5ZM8.5 25.5H17V17H25.5V8.5H17V17H8.5V25.5Z" fill="white"/>
+                        </svg>                    
+                        <h1 class="text-white text-2xl font-Fira">Abolfazl</h1>                    
+                </div>
+                <svg width="40" height="40" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <rect width="1" height="1" transform="matrix(1 0 0 -1 11 12)" fill="#D9D9D9"/>
+                    <rect x="3" y="19.9706" width="24" height="2" transform="rotate(-45 3 19.9706)" fill="#D9D9D9"/>
+                    <rect x="4" y="3" width="24" height="2" transform="rotate(45 4 3)" fill="#D9D9D9"/>
+                    </svg>                    
+            </section>
+            <ul class="flex flex-col gap-10 py-20">
+                <a href="#home"><li class="lies"><span class="nav-hashtags">#</span>Home</li></a>
+                <a href="#projects"><li class="lies"><span class="nav-hashtags">#</span>Projects</li></a>
+                <a href="#about"><li class="lies"><span class="nav-hashtags">#</span>About-me</li></a>
+                <a href="#contacts"><li class="lies"><span class="nav-hashtags">#</span>Contacts</li></a>
+                <li class="lies text-4xl font-bold">EN <svg width="10" height="7" viewBox="0 0 10 7" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <line x1="0.707107" y1="0.792893" x2="5.70711" y2="5.79289" stroke="#ABB2BF" stroke-width="2"/>
+                    <line x1="4.29289" y1="5.79289" x2="9.29289" y2="0.792893" stroke="#ABB2BF" stroke-width="2"/>
+                    </svg>
+                    </li>
+            </ul>
+        </nav>
     </main>
-    <script src="../particles.js"></script>
-    <script src="../app.js"></script>
+    <script src="../src/js/particles.js"></script>
+    <script src="../src/js/app.js"></script>
+    <script src="../src/js/script.js"></script>
 </body>
 </html>

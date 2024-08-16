@@ -8,3 +8,13 @@
         font-family: "Fira";
         src: url(/assets/fonts/FiraCode-VariableFont_wght.ttf);
     }
+
+
+@layer components{
+    .nav-hashtags{
+        @apply font-normal text-5xl text-primary font-Fira; 
+    }
+    .lies{
+        @apply flex items-center gap-2 text-4xl font-normal text-gray font-Fira hover:text-white transition-all cursor-pointer; 
+    }
+}
