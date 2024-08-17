@@ -12,9 +12,15 @@
 
 @layer components{
     .nav-hashtags{
-        @apply font-normal text-5xl text-primary font-Fira; 
+        @apply font-normal text-5xl text-primary font-Fira lg:text-2xl; 
+    }
+    .lihead{
+        @apply  lg:flex items-center gap-2  font-normal text-gray font-Fira hover:text-white transition-all cursor-pointer text-2xl; 
     }
     .lies{
-        @apply flex items-center gap-2 text-4xl font-normal text-gray font-Fira hover:text-white transition-all cursor-pointer; 
+        @apply flex items-center gap-2 text-4xl font-normal text-gray font-Fira hover:text-white transition-all cursor-pointer lg:text-2xl; 
+    }
+    .span{
+        @apply text-primary; 
     }
 }
