@@ -4,13 +4,14 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Portfolio</title>
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <link rel="stylesheet" href="../dist/style.css">
     <link rel="stylesheet" href="../dist/home.css">
-    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link rel="icon" type="image/x-icon" href="../assets/icon/Logo.svg">
 </head>
-<body id="" class="w-full h-screen bg-bg overflow-hidden">
+<body class="w-full h-screen bg-bg">
     <main id="particles-js" class="container flex flex-col justify-center">
-        <header  data-aos="fade-up" class="flex items-center justify-between py-5 lg:bg-transparent">
+        <header data-aos="fade-down" class="flex items-center justify-between py-5 lg:bg-transparent">
             <div class="flex items-center gap-3">
                 <svg width="34" height="34" viewBox="0 0 34 34" fill="none" xmlns="http://www.w3.org/2000/svg">
                     <path fill-rule="evenodd" clip-rule="evenodd" d="M25.5 0H17V8.5H8.5H0V17V25.5V34H8.5H17V25.5H25.5H34V17V8.5V0H25.5ZM8.5 25.5H17V17H25.5V8.5H17V17H8.5V25.5Z" fill="white"/>
@@ -48,10 +49,10 @@
                     </svg>                    
             </section>
             <ul class="flex flex-col gap-10 py-20 lg:hidden">
-                <li class="lies"><a href="#home"></a><span class="nav-hashtags">#</span>Home</a></li>
-                <li class="lies"><a href="#projects"></a><span class="nav-hashtags">#</span>Projects</a></li>
-                <li class="lies"><a href="#about"></a><span class="nav-hashtags">#</span>About-me</a></li>
-                <li class="lies"><a href="#contacts"></a><span class="nav-hashtags">#</span>Contacts</a></li>
+                <li class="lies"><a href="#home"><span class="nav-hashtags">#</span>Home</a></li>
+                <li class="lies"><a href="#projects"><span class="nav-hashtags">#</span>Projects</a></li>
+                <li class="lies"><a href="#about"><span class="nav-hashtags">#</span>About-me</a></li>
+                <li class="lies"><a href="#contacts"><span class="nav-hashtags">#</span>Contacts</a></li>
                 <li class="lies text-4xl font-bold">EN <svg width="10" height="7" viewBox="0 0 10 7" fill="none" xmlns="http://www.w3.org/2000/svg">
                     <line x1="0.707107" y1="0.792893" x2="5.70711" y2="5.79289" stroke="#ABB2BF" stroke-width="2"/>
                     <line x1="4.29289" y1="5.79289" x2="9.29289" y2="0.792893" stroke="#ABB2BF" stroke-width="2"/>
@@ -59,10 +60,38 @@
                 </li>
             </ul>
         </nav>
-        <article  class="flex flex-col bg-transparent py-5">
-            <h1 class="text-white text-[35px] font-medium font-Fira">Abolfazl is a <span class="span">web designer</span> and <span class="span">front-end developer</span></h1>
-            <p class="text-gray font-Fira py-1">He crafts responsive websites where technologies meet creativity</p>
-        </article> 
+        <article id="home" class="flex flex-col items-center bg-transparent py-5">
+            <h1 data-aos="fade-up" class="text-white text-[35px] font-medium font-Fira">Abolfazl is a <span class="span">web designer</span> and <span class="span">front-end developer</span></h1>
+            <p data-aos="fade-right" class="text-gray font-Fira py-1">He crafts responsive websites where technologies meet creativity</p>
+            <div class="flex flex-col items-center">
+                <img data-aos="fade-left" src="../assets/img/hero.png" alt="">
+                <div data-aos="fade-down" class="flex items-center gap-3 w-full py-3 px-2 border-2 border-gray">
+                    <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <rect x="0.5" y="0.5" width="15" height="15" fill="#C778DD" stroke="#C778DD"/>
+                        </svg>   
+                        <div class="flex flex-col gap-1">
+                            <span class="text-gray font-Fira">Currently working on</span>
+                            <h1 class="text-white font-Fira">Portfolio</h1>
+                        </div>                     
+                </div>
+            </div>
+            <div class="flex flex-col items-end w-full py-20">
+                <div data-aos="fade-up" class="flex flex-col items-start gap-3 w-full px-10 py-5 border-2 border-gray relative">  
+                        <h1 class="text-white font-Fira">With great power comes great electricity bill</h1>
+                        <svg class="absolute bottom-[75px] left-3" width="42" height="29" viewBox="0 0 42 29" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <rect width="41.472" height="28.704" fill="#282C33"/>
+                            <path d="M18.56 19.616C18.56 21.0453 18.0373 22.2507 16.992 23.232C15.968 24.2133 14.72 24.704 13.248 24.704C11.7333 24.704 10.4747 24.2133 9.472 23.232C8.49067 22.2507 8 21.0453 8 19.616C8 18.9333 8.096 18.208 8.288 17.44C8.48 16.672 8.864 15.68 9.44 14.464L14.4 4H19.2L16.544 15.584C17.1413 16.0107 17.6213 16.576 17.984 17.28C18.368 17.9627 18.56 18.7413 18.56 19.616ZM32.8 19.616C32.8 21.0453 32.2773 22.2507 31.232 23.232C30.1867 24.2133 28.9387 24.704 27.488 24.704C26.016 24.704 24.768 24.2133 23.744 23.232C22.7413 22.2507 22.24 21.0453 22.24 19.616C22.24 18.9333 22.336 18.208 22.528 17.44C22.72 16.672 23.1147 15.68 23.712 14.464L28.704 4H33.472L30.784 15.584C31.4027 16.0107 31.8933 16.576 32.256 17.28C32.6187 17.9627 32.8 18.7413 32.8 19.616Z" fill="#ABB2BF"/>
+                        </svg>       
+                </div>
+                <div data-aos="fade-down" class="flex flex-col gap-1 w-48 py-3 px-2 border-2 border-t-transparent border-gray relative"> 
+                            <h1 class="text-white font-Fira text-center text-2xl">- Dr. Who</h1>
+                            <svg class="absolute bottom-11 right-3" width="42" height="29" viewBox="0 0 42 29" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <rect width="41.472" height="28.704" fill="#282C33"/>
+                                <path d="M18.56 19.616C18.56 21.0453 18.0373 22.2507 16.992 23.232C15.968 24.2133 14.72 24.704 13.248 24.704C11.7333 24.704 10.4747 24.2133 9.472 23.232C8.49067 22.2507 8 21.0453 8 19.616C8 18.9333 8.096 18.208 8.288 17.44C8.48 16.672 8.864 15.68 9.44 14.464L14.4 4H19.2L16.544 15.584C17.1413 16.0107 17.6213 16.576 17.984 17.28C18.368 17.9627 18.56 18.7413 18.56 19.616ZM32.8 19.616C32.8 21.0453 32.2773 22.2507 31.232 23.232C30.1867 24.2133 28.9387 24.704 27.488 24.704C26.016 24.704 24.768 24.2133 23.744 23.232C22.7413 22.2507 22.24 21.0453 22.24 19.616C22.24 18.9333 22.336 18.208 22.528 17.44C22.72 16.672 23.1147 15.68 23.712 14.464L28.704 4H33.472L30.784 15.584C31.4027 16.0107 31.8933 16.576 32.256 17.28C32.6187 17.9627 32.8 18.7413 32.8 19.616Z" fill="#ABB2BF"/>
+                            </svg>               
+                </div>
+            </div>
+        </article>
     </main>
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script src="../src/js/particles.js"></script>
