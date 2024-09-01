@@ -41,4 +41,13 @@
     .p-about{
         @apply w-full font-Fira text-gray py-3;
     }
+    .form-inp{
+        @apply w-full py-2 px-2 bg-transparent border-2 border-gray text-gray focus:outline-none cursor-text;
+    }
+    .contact-id{
+        @apply w-full h-auto flex items-center gap-3;
+    }
+    .contact-id-txt{
+        @apply font-Fira text-gray;
+    }
 }
