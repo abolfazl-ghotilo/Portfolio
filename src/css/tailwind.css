@@ -38,4 +38,7 @@
     .p-skill-dives{
         @apply font-Fira text-gray px-1 py-1;
     }
+    .p-about{
+        @apply w-full font-Fira text-gray py-3;
+    }
 }
