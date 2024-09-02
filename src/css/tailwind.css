@@ -44,10 +44,10 @@
     .form-inp{
         @apply w-full py-2 px-2 bg-transparent border-2 border-gray text-gray focus:outline-none cursor-text;
     }
-    .contact-id{
+    .contact-div{
         @apply w-full h-auto flex items-center gap-3;
     }
     .contact-id-txt{
-        @apply font-Fira text-gray;
+        @apply font-Fira text-gray hover:text-white duration-100 transition-all;
     }
 }

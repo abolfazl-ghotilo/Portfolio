@@ -781,7 +781,7 @@ video {
   outline-offset: 2px;
 }
 
-.contact-id {
+.contact-div {
   display: flex;
   height: auto;
   width: 100%;
@@ -793,6 +793,14 @@ video {
   font-family: Fira, monospace;
   --tw-text-opacity: 1;
   color: rgb(171 178 191 / var(--tw-text-opacity));
+  transition-property: all;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-duration: 100ms;
+}
+
+.contact-id-txt:hover {
+  --tw-text-opacity: 1;
+  color: rgb(255 255 255 / var(--tw-text-opacity));
 }
 
 .fixed {
@@ -805,6 +813,10 @@ video {
 
 .relative {
   position: relative;
+}
+
+.-right-8 {
+  right: -2rem;
 }
 
 .bottom-0 {
@@ -875,6 +887,10 @@ video {
   height: 10rem;
 }
 
+.h-\[2px\] {
+  height: 2px;
+}
+
 .h-\[40\%\] {
   height: 40%;
 }
@@ -911,6 +927,10 @@ video {
   width: 2.25rem;
 }
 
+.w-\[425px\] {
+  width: 425px;
+}
+
 .w-\[50\%\] {
   width: 50%;
 }
@@ -921,6 +941,10 @@ video {
 
 .transform {
   transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
+}
+
+.cursor-pointer {
+  cursor: pointer;
 }
 
 .flex-row {
@@ -983,20 +1007,12 @@ video {
   align-self: flex-start;
 }
 
+.overflow-x-hidden {
+  overflow-x: hidden;
+}
+
 .rounded-sm {
   border-radius: 0.125rem;
-}
-
-.rounded-lg {
-  border-radius: 0.5rem;
-}
-
-.rounded-xl {
-  border-radius: 0.75rem;
-}
-
-.rounded-br-xl {
-  border-bottom-right-radius: 0.75rem;
 }
 
 .border-2 {
@@ -1038,6 +1054,11 @@ video {
   background-color: rgb(40 44 51 / var(--tw-bg-opacity));
 }
 
+.bg-gray {
+  --tw-bg-opacity: 1;
+  background-color: rgb(171 178 191 / var(--tw-bg-opacity));
+}
+
 .bg-transparent {
   background-color: transparent;
 }
@@ -1045,11 +1066,6 @@ video {
 .bg-white {
   --tw-bg-opacity: 1;
   background-color: rgb(255 255 255 / var(--tw-bg-opacity));
-}
-
-.bg-gray {
-  --tw-bg-opacity: 1;
-  background-color: rgb(171 178 191 / var(--tw-bg-opacity));
 }
 
 .px-10 {
@@ -1126,6 +1142,14 @@ video {
   padding-bottom: 1.25rem;
 }
 
+.pt-5 {
+  padding-top: 1.25rem;
+}
+
+.pt-8 {
+  padding-top: 2rem;
+}
+
 .text-center {
   text-align: center;
 }
@@ -1151,16 +1175,6 @@ video {
 .text-xl {
   font-size: 1.25rem;
   line-height: 1.75rem;
-}
-
-.text-lg {
-  font-size: 1.125rem;
-  line-height: 1.75rem;
-}
-
-.text-sm {
-  font-size: 0.875rem;
-  line-height: 1.25rem;
 }
 
 .text-xs {
@@ -1210,6 +1224,11 @@ video {
 .hover\:bg-primary:hover {
   --tw-bg-opacity: 1;
   background-color: rgb(199 120 221 / var(--tw-bg-opacity));
+}
+
+.hover\:text-white:hover {
+  --tw-text-opacity: 1;
+  color: rgb(255 255 255 / var(--tw-text-opacity));
 }
 
 @media (min-width: 1024px) {
