@@ -911,6 +911,10 @@ video {
   height: 100vh;
 }
 
+.h-full {
+  height: 100%;
+}
+
 .w-48 {
   width: 12rem;
 }
