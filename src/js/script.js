@@ -5,6 +5,7 @@ let close = $.getElementById("close")
 
 humbermenu.addEventListener("click" , function(){
     navbar.classList.remove("hidden")
+    navbar.classList.add("duration-150")
 })
 close.addEventListener("click" , function(){
     navbar.classList.add("hidden");
