@@ -3,6 +3,11 @@ let humbermenu = $.getElementById("humbermenu")
 let navbar = $.getElementById("navbar")
 let close = $.getElementById("close")
 
+
+window.addEventListener("contextmenu" , (e) => {
+  e.preventDefault()
+})
+
 humbermenu.addEventListener("click" , function(){
     navbar.classList.remove("hidden")
     navbar.classList.add("duration-150")
