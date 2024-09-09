@@ -2,7 +2,7 @@ let $ = document
 let humbermenu = $.getElementById("humbermenu")
 let navbar = $.getElementById("navbar")
 let close = $.getElementById("close")
-let mybutton = document.getElementById("gotop");
+let mybutton = $.getElementById("gotop");
 
 
 window.addEventListener("contextmenu" , (e) => {
@@ -15,8 +15,9 @@ humbermenu.addEventListener("click" , function(){
 close.addEventListener("click" , function(){
     navbar.classList.add("hidden");
 })
-
-
+function closeNav(){
+  navbar.classList.add("hidden");
+}
 window.onscroll = function() {scrollFunction()};
 
 function scrollFunction() {
