@@ -2,6 +2,7 @@ let $ = document
 let humbermenu = $.getElementById("humbermenu")
 let navbar = $.getElementById("navbar")
 let close = $.getElementById("close")
+let mybutton = document.getElementById("gotop");
 
 
 window.addEventListener("contextmenu" , (e) => {
@@ -10,13 +11,12 @@ window.addEventListener("contextmenu" , (e) => {
 
 humbermenu.addEventListener("click" , function(){
     navbar.classList.remove("hidden")
-    navbar.classList.add("duration-150")
 })
 close.addEventListener("click" , function(){
     navbar.classList.add("hidden");
 })
 
-let mybutton = document.getElementById("gotop");
+
 window.onscroll = function() {scrollFunction()};
 
 function scrollFunction() {
