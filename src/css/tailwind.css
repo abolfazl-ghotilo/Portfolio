@@ -9,7 +9,6 @@
         src: url(/assets/fonts/FiraCode-VariableFont_wght.ttf);
     }
 
-
 @layer components{
     .nav-hashtags{
         @apply font-normal text-5xl text-primary font-Fira lg:text-2xl; 
