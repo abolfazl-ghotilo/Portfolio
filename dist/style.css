@@ -1363,6 +1363,11 @@ video {
     background-color: transparent;
   }
 
+  .lg\:bg-primary {
+    --tw-bg-opacity: 1;
+    background-color: rgb(199 120 221 / var(--tw-bg-opacity));
+  }
+
   .lg\:text-2xl {
     font-size: 1.5rem;
     line-height: 2rem;
