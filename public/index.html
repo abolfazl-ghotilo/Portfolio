@@ -10,9 +10,9 @@
     <link rel="icon" type="image/x-icon" href="../assets/icon/Logo.svg">
 </head>
 <body class="w-full h-screen bg-bg duration-150 lg:flex items-center justify-center">
-    <h1 data-aos="zoom-in-up" class="hidden lg:block  text-4xl font-Fira text-white z-50">You Can only view this <span class="text-primary">website</span> on your Phone😎</h1>
-    <div class="body-particles overflow-x-hidden">
-    <main class="flex flex-col justify-center lg:hidden">
+    <!-- <h1 data-aos="zoom-in-up" class="hidden lg:block  text-4xl font-Fira text-white z-50">You Can only view this <span class="text-primary">website</span> on your Phone😎</h1> -->
+    <div class="w-full body-particles overflow-x-hidden">
+    <main class="w-full h-auto flex flex-col items-center justify-center">
         <header data-aos="fade-down" class="container flex items-center justify-between py-5 duration-150 lg:bg-transparent">
             <div class="flex items-center gap-3">
                 <svg width="34" height="34" viewBox="0 0 34 34" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -25,11 +25,11 @@
                 <hr class="w-5 h-1 bg-white rounded-sm">
             </div>
             <ul class="hidden lg:flex flex-row items-center gap-10">
-                <li class="lihead"><a href="#home"></a><span class="nav-hashtags">#</span>Home</a></li>
-                <li class="lihead"><a href="#projects"></a><span class="nav-hashtags">#</span>Projects</a></li>
-                <li class="lihead"><a href="#about"></a><span class="nav-hashtags">#</span>About-me</a></li>
-                <li class="lihead"><a href="#contacts"></a><span class="nav-hashtags">#</span>Contacts</a></li>
-                <li class="lihead text-4xl font-bold">EN <svg width="10" height="7" viewBox="0 0 10 7" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <li class="lihead"><a href="#home"><span class="nav-hashtags">#</span>Home</a></li>
+                <li class="lihead"><a href="#projects"><span class="nav-hashtags">#</span>Projects</a></li>
+                <li class="lihead"><a href="#about"><span class="nav-hashtags">#</span>About-me</a></li>
+                <li class="lihead"><a href="#contacts"><span class="nav-hashtags">#</span>Contacts</a></li>
+                <li class="lihead text-4xl font-bold lg:text-2xl">EN <svg width="10" height="7" viewBox="0 0 10 7" fill="none" xmlns="http://www.w3.org/2000/svg">
                     <line x1="0.707107" y1="0.792893" x2="5.70711" y2="5.79289" stroke="#ABB2BF" stroke-width="2"/>
                     <line x1="4.29289" y1="5.79289" x2="9.29289" y2="0.792893" stroke="#ABB2BF" stroke-width="2"/>
                 </svg>
@@ -412,7 +412,7 @@
             <span class="text-gray hover:text-white duration-150 cursor-pointer font-Fira">© Copyright 2024. Made by Abolfazl</span>
         </footer>
     </div>
-    <div id="particles-js"></div>
+    <div class="w-full h-screen" id="particles-js"></div>
     </main>
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script src="../src/js/particles.js"></script>

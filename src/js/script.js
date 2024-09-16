@@ -5,9 +5,9 @@ let close = $.getElementById("close")
 let mybutton = $.getElementById("gotop");
 
 
-window.addEventListener("contextmenu" , (e) => {
-  e.preventDefault()
-})
+// window.addEventListener("contextmenu" , (e) => {
+//   e.preventDefault()
+// })
 
 humbermenu.addEventListener("click" , function(){
     navbar.classList.remove("hidden")
