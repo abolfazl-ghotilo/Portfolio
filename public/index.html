@@ -63,9 +63,11 @@
             </ul>
         </nav>
         <article id="home" class="container flex flex-col items-center bg-transparent py-5">
-            <div>
-            <h1 data-aos="fade-up" class="text-white text-[35px] font-medium font-Fira">Abolfazl ghotilo is a <span class="span">web designer</span> and <span class="span">front-end developer</span></h1>
-            <p data-aos="fade-right" class="text-gray font-Fira py-1">He crafts responsive websites where technologies meet creativity</p>
+            <div class="lg:flex items-center">
+            <div class="lg:flex flex-col items-start gap-3">
+                    <h1 data-aos="fade-up" class="text-white text-[35px] font-medium font-Fira">Abolfazl ghotilo is a <span class="span">web designer</span> and <span class="span">front-end developer</span></h1>
+                    <p data-aos="fade-right" class="text-gray font-Fira py-1">He crafts responsive websites where technologies meet creativity</p>
+                    <a class="hidden lg:block" href="#contactme"><button class="border-2 border-primary text-white font-Fira p-5 py-2 transition-all hover:bg-primary " type="button">Contact me!</button></a>
             </div>           
             <div class="flex flex-col items-center">
                 <img data-aos="fade-left" src="../assets/img/hero.png" alt="">
@@ -79,10 +81,11 @@
                         </div>                     
                 </div>
             </div>
-            <div class="flex flex-col items-end w-full py-14">
+            </div>
+            <div class="flex flex-col items-end w-full py-14 lg:w-[70%] lg:relative">
                 <div data-aos="fade-up" class="flex flex-col items-start gap-3 w-full px-10 py-5 border-2 border-gray relative">  
-                        <h1 class="text-white font-Fira">With great power comes great electricity bill</h1>
-                        <svg class="absolute bottom-[75px] left-3" width="42" height="29" viewBox="0 0 42 29" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <h1 class="w-full text-white font-Fira lg:text-2xl text-center">With great power comes great electricity bill</h1>
+                        <svg class="absolute bottom-[75px] left-3 lg:-top-3" width="42" height="29" viewBox="0 0 42 29" fill="none" xmlns="http://www.w3.org/2000/svg">
                             <rect width="41.472" height="28.704" fill="#282C33"/>
                             <path d="M18.56 19.616C18.56 21.0453 18.0373 22.2507 16.992 23.232C15.968 24.2133 14.72 24.704 13.248 24.704C11.7333 24.704 10.4747 24.2133 9.472 23.232C8.49067 22.2507 8 21.0453 8 19.616C8 18.9333 8.096 18.208 8.288 17.44C8.48 16.672 8.864 15.68 9.44 14.464L14.4 4H19.2L16.544 15.584C17.1413 16.0107 17.6213 16.576 17.984 17.28C18.368 17.9627 18.56 18.7413 18.56 19.616ZM32.8 19.616C32.8 21.0453 32.2773 22.2507 31.232 23.232C30.1867 24.2133 28.9387 24.704 27.488 24.704C26.016 24.704 24.768 24.2133 23.744 23.232C22.7413 22.2507 22.24 21.0453 22.24 19.616C22.24 18.9333 22.336 18.208 22.528 17.44C22.72 16.672 23.1147 15.68 23.712 14.464L28.704 4H33.472L30.784 15.584C31.4027 16.0107 31.8933 16.576 32.256 17.28C32.6187 17.9627 32.8 18.7413 32.8 19.616Z" fill="#ABB2BF"/>
                         </svg>       
@@ -94,6 +97,7 @@
                                 <path d="M18.56 19.616C18.56 21.0453 18.0373 22.2507 16.992 23.232C15.968 24.2133 14.72 24.704 13.248 24.704C11.7333 24.704 10.4747 24.2133 9.472 23.232C8.49067 22.2507 8 21.0453 8 19.616C8 18.9333 8.096 18.208 8.288 17.44C8.48 16.672 8.864 15.68 9.44 14.464L14.4 4H19.2L16.544 15.584C17.1413 16.0107 17.6213 16.576 17.984 17.28C18.368 17.9627 18.56 18.7413 18.56 19.616ZM32.8 19.616C32.8 21.0453 32.2773 22.2507 31.232 23.232C30.1867 24.2133 28.9387 24.704 27.488 24.704C26.016 24.704 24.768 24.2133 23.744 23.232C22.7413 22.2507 22.24 21.0453 22.24 19.616C22.24 18.9333 22.336 18.208 22.528 17.44C22.72 16.672 23.1147 15.68 23.712 14.464L28.704 4H33.472L30.784 15.584C31.4027 16.0107 31.8933 16.576 32.256 17.28C32.6187 17.9627 32.8 18.7413 32.8 19.616Z" fill="#ABB2BF"/>
                             </svg>               
                 </div>
+                <div data-aos="fade-left" class="hidden lg:w-20 h-24 border-2 border-gray border-r-0 absolute -right-72"></div>                 
             </div>
             <div id="Go-Top-gif">
                 <img class="hidden fixed bottom-5 right-[30px] z-50 cursor-pointer w-10 transition-all duration-200" onclick="topFunction()" id="gotop" src="../assets/icon/go-Top-p.gif" alt="go-up">
@@ -338,7 +342,7 @@
                     <button data-aos="flip-up"  class="font-Fira text-white border-2 border-primary px-6 py-2 self-start hover:bg-primary hover:border-white transition-all duration-150" type="button">Send</button>
                 </form>
             </div>
-            <div data-aos="flip-up" class="flex flex-col items-start gap-4 py-2 px-3 w-64 h-auto border-2 border-gray bg-transparent">
+            <div id="contactme" data-aos="flip-up" class="flex flex-col items-start gap-4 py-2 px-3 w-64 h-auto border-2 border-gray bg-transparent">
                 <span data-aos="flip-up" class="w-full text-center text-white font-Fira text-xl font-medium">Contact Me</span>
                 <div class="flex flex-col gap-3">
                     <div data-aos="fade-down" id="github" class="contact-div">
