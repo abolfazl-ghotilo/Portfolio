@@ -26,7 +26,7 @@
         @apply flex items-center gap-2 text-4xl font-semibold text-white font-Fira;
     }
     .titles-dives{
-        @apply flex items-center justify-between gap-3 w-full pb-5;
+        @apply flex items-center justify-between gap-3 w-full pb-5 lg:flex lg:justify-start;
     }
     .P-btn{
         @apply text-xl text-primary text-center font-Fira py-3 px-6 border-2 border-primary cursor-pointer hover:bg-primary hover:text-white hover:border-white duration-150;
