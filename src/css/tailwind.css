@@ -50,6 +50,6 @@
         @apply w-full h-auto flex items-center gap-3;
     }
     .contact-id-txt{
-        @apply font-Fira text-gray hover:text-white duration-100 transition-all;
+        @apply font-Fira text-gray hover:text-white duration-100 transition-all lg:w-full lg:text-center;
     }
 }

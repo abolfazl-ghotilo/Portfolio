@@ -819,6 +819,13 @@ video {
   color: rgb(255 255 255 / var(--tw-text-opacity));
 }
 
+@media (min-width: 1024px) {
+  .contact-id-txt {
+    width: 100%;
+    text-align: center;
+  }
+}
+
 .fixed {
   position: fixed;
 }
@@ -1182,6 +1189,10 @@ video {
   padding-bottom: 1.25rem;
 }
 
+.pb-10 {
+  padding-bottom: 2.5rem;
+}
+
 .pb-5 {
   padding-bottom: 1.25rem;
 }
@@ -1192,18 +1203,6 @@ video {
 
 .pt-8 {
   padding-top: 2rem;
-}
-
-.pb-0 {
-  padding-bottom: 0px;
-}
-
-.pb-1 {
-  padding-bottom: 0.25rem;
-}
-
-.pb-10 {
-  padding-bottom: 2.5rem;
 }
 
 .text-center {
@@ -1314,76 +1313,28 @@ video {
     top: -0.75rem;
   }
 
-  .lg\:left-\[59px\] {
-    left: 59px;
-  }
-
-  .lg\:right-\[59px\] {
-    right: 59px;
-  }
-
-  .lg\:right-0 {
-    right: 0px;
-  }
-
-  .lg\:right-5 {
-    right: 1.25rem;
-  }
-
-  .lg\:right-56 {
-    right: 14rem;
-  }
-
-  .lg\:bottom-0 {
-    bottom: 0px;
-  }
-
-  .lg\:left-10 {
-    left: 2.5rem;
-  }
-
-  .lg\:left-16 {
-    left: 4rem;
-  }
-
-  .lg\:left-20 {
-    left: 5rem;
-  }
-
-  .lg\:left-2 {
-    left: 0.5rem;
-  }
-
-  .lg\:left-24 {
-    left: 6rem;
+  .lg\:bottom-20 {
+    bottom: 5rem;
   }
 
   .lg\:left-28 {
     left: 7rem;
   }
 
-  .lg\:right-16 {
-    right: 4rem;
-  }
-
-  .lg\:right-20 {
-    right: 5rem;
+  .lg\:left-\[59px\] {
+    left: 59px;
   }
 
   .lg\:right-24 {
     right: 6rem;
   }
 
-  .lg\:bottom-20 {
-    bottom: 5rem;
+  .lg\:right-\[59px\] {
+    right: 59px;
   }
 
   .lg\:z-50 {
     z-index: 50;
-  }
-
-  .lg\:-z-50 {
-    z-index: -50;
   }
 
   .lg\:block {
@@ -1414,6 +1365,10 @@ video {
     width: 15rem;
   }
 
+  .lg\:w-72 {
+    width: 18rem;
+  }
+
   .lg\:w-80 {
     width: 20rem;
   }
@@ -1426,20 +1381,28 @@ video {
     width: 70%;
   }
 
-  .lg\:w-7 {
-    width: 1.75rem;
-  }
-
-  .lg\:w-72 {
-    width: 18rem;
+  .lg\:w-full {
+    width: 100%;
   }
 
   .lg\:flex-row {
     flex-direction: row;
   }
 
-  .lg\:justify-start {
-    justify-content: flex-start;
+  .lg\:flex-col {
+    flex-direction: column;
+  }
+
+  .lg\:items-start {
+    align-items: flex-start;
+  }
+
+  .lg\:items-center {
+    align-items: center;
+  }
+
+  .lg\:self-center {
+    align-self: center;
   }
 
   .lg\:border-l-2 {
@@ -1488,11 +1451,6 @@ video {
   .lg\:text-4xl {
     font-size: 2.25rem;
     line-height: 2.5rem;
-  }
-
-  .lg\:text-xl {
-    font-size: 1.25rem;
-    line-height: 1.75rem;
   }
 
   .lg\:text-lg {

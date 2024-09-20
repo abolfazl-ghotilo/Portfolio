@@ -258,7 +258,7 @@
             </div>    
         </article>
         <article id="about" class="container flex flex-col items-center bg-transparent py-5 lg:pb-0">
-            <div data-aos="fade-right" class="titles-dives ">
+            <div data-aos="fade-right" class="titles-dives">
                 <h1 class="topics text-nowrap"><span class="nav-hashtags text-3xl">#</span>About-me</h1>
                 <svg class="w-full rounded-sm lg:h-1 lg:w-72 lg:bg-primary" viewBox="0 0 175 2" fill="none" xmlns="http://www.w3.org/2000/svg">
                     <path fill-rule="evenodd" clip-rule="evenodd" d="M175 1.5H0V0.5H175V1.5Z" fill="#C778DD"/>
@@ -329,24 +329,17 @@
         </article>
         <article id="contacts" class="container flex flex-col items-center bg-transparent">
             <div data-aos="fade-right" class="titles-dives">
-                <h1 class="topics"><span class="nav-hashtags">#</span>Contacts</h1>
-                <svg class="w-full rounded-sm" viewBox="0 0 175 2" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <h1 class="topics"><span class="nav-hashtags text-3xl">#</span>Contacts</h1>
+                <svg class="w-full rounded-sm lg:h-1 lg:w-72 lg:bg-primary" viewBox="0 0 175 2" fill="none" xmlns="http://www.w3.org/2000/svg">
                     <path fill-rule="evenodd" clip-rule="evenodd" d="M175 1.5H0V0.5H175V1.5Z" fill="#C778DD"/>
                     </svg>                                       
             </div>
-            <p data-aos="fade-down-right" class="p-about">I’m interested in freelance opportunities. However, if you have other request or question, don’t hesitate to contact me</p>
-            <div class="w-full h-auto py-10">
-                <form class="flex flex-col gap-4 font-Fira w-full h-auto px-7">
-                    <input data-aos="zoom-out" class="form-inp" type="text" placeholder="Name">
-                    <input data-aos="zoom-out" class="form-inp" type="email" placeholder="Email">
-                    <input data-aos="zoom-out" class="form-inp" type="text" placeholder="Title">
-                    <textarea data-aos="zoom-out" class="w-full h-40 bg-transparent form-inp" id="" placeholder="Message"></textarea>
-                    <button data-aos="flip-up"  class="font-Fira text-white border-2 border-primary px-6 py-2 self-start hover:bg-primary hover:border-white transition-all duration-150" type="button">Send</button>
-                </form>
-            </div>
-            <div id="contactme" data-aos="flip-up" class="flex flex-col items-start gap-4 py-2 px-3 w-64 h-auto border-2 border-gray bg-transparent">
+            <div class="flex flex-col items-center lg:flex lg:items-start lg:w-full">
+            <div class="lg:flex lg:flex-col lg:items-center">
+            <p data-aos="fade-down-right" class="p-about pb-5 lg:self-center">I’m interested in freelance opportunities. However, if you have other request or question, don’t hesitate to contact me</p>
+            <div id="contactme" data-aos="flip-up" class="flex flex-col items-start gap-4 py-2 px-3 w-64 h-auto border-2 border-gray bg-transparent lg:self-center">
                 <span data-aos="flip-up" class="w-full text-center text-white font-Fira text-xl font-medium">Contact Me</span>
-                <div class="flex flex-col gap-3">
+                <div class="flex flex-col gap-3 lg">
                     <div data-aos="fade-down" id="github" class="contact-div">
                         <svg width="32" height="32" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
                             <g clip-path="url(#clip0_910_44)">
@@ -400,6 +393,17 @@
                             <h1 class="contact-id-txt"><a href="tel:09359541235">+989359541235</a></h1>
                     </div>
                 </div>
+            </div>
+            </div>
+            <div class="w-full h-auto py-10">
+                <form class="flex flex-col gap-4 font-Fira w-full h-auto px-7">
+                    <input data-aos="zoom-out" class="form-inp" type="text" placeholder="Name">
+                    <input data-aos="zoom-out" class="form-inp" type="email" placeholder="Email">
+                    <input data-aos="zoom-out" class="form-inp" type="text" placeholder="Title">
+                    <textarea data-aos="zoom-out" class="w-full h-40 bg-transparent form-inp" id="" placeholder="Message"></textarea>
+                    <button data-aos="flip-up"  class="font-Fira text-white border-2 border-primary px-6 py-2 self-start hover:bg-primary hover:border-white transition-all duration-150" type="button">Send</button>
+                </form>
+            </div>
             </div>
         </article>      
         <footer data-aos="fade-down" class=" flex flex-col items-center gap-3 w-full pt-8 pb-5">
