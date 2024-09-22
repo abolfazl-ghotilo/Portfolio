@@ -894,12 +894,104 @@ video {
   top: 5rem;
 }
 
+.right-5 {
+  right: 1.25rem;
+}
+
+.right-52 {
+  right: 13rem;
+}
+
+.-right-52 {
+  right: -13rem;
+}
+
+.-right-3 {
+  right: -0.75rem;
+}
+
+.-right-32 {
+  right: -8rem;
+}
+
+.top-10 {
+  top: 2.5rem;
+}
+
+.right-32 {
+  right: 8rem;
+}
+
+.-left-0 {
+  left: -0px;
+}
+
+.-left-32 {
+  left: -8rem;
+}
+
+.-right-5 {
+  right: -1.25rem;
+}
+
+.left-96 {
+  left: 24rem;
+}
+
+.-right-0 {
+  right: -0px;
+}
+
+.-right-96 {
+  right: -24rem;
+}
+
+.-right-2 {
+  right: -0.5rem;
+}
+
+.-right-28 {
+  right: -7rem;
+}
+
+.-right-1 {
+  right: -0.25rem;
+}
+
+.-right-\[12\] {
+  right: -12;
+}
+
+.-right-\[120px\] {
+  right: -120px;
+}
+
+.top-3 {
+  top: 0.75rem;
+}
+
+.top-32 {
+  top: 8rem;
+}
+
+.top-4 {
+  top: 1rem;
+}
+
+.top-40 {
+  top: 10rem;
+}
+
 .-z-10 {
   z-index: -10;
 }
 
 .z-50 {
   z-index: 50;
+}
+
+.block {
+  display: block;
 }
 
 .flex {
@@ -944,6 +1036,10 @@ video {
 
 .h-screen {
   height: 100vh;
+}
+
+.h-4 {
+  height: 1rem;
 }
 
 .w-10 {
@@ -1335,6 +1431,10 @@ video {
 
   .lg\:right-\[59px\] {
     right: 59px;
+  }
+
+  .lg\:-right-72 {
+    right: -18rem;
   }
 
   .lg\:z-50 {
