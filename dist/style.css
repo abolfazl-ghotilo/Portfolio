@@ -1209,6 +1209,10 @@ video {
   text-align: center;
 }
 
+.text-justify {
+  text-align: justify;
+}
+
 .font-Fira {
   font-family: Fira, monospace;
 }
