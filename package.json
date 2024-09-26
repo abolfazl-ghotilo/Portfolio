@@ -4,7 +4,8 @@
   "description": "my portfolio web",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev": "tailwindcss ./src/css/tailwind.css -o ./dist/style.css --watch"
   },
   "author": "",
   "license": "ISC",

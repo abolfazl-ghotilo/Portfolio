@@ -35,10 +35,10 @@
         @apply flex flex-col items-start w-[50%] h-[120px] border-2 border-gray  bg-transparent; 
     }
     .title-skill-dives{
-        @apply w-full border-b-2 border-gray font-Fira text-xl text-white px-1 py-1;
+        @apply w-full border-b-2 border-gray font-Fira text-xl text-white px-1 py-1 text-center;
     }
     .p-skill-dives{
-        @apply font-Fira text-gray px-1 py-1;
+        @apply font-Fira text-gray px-1 py-1 text-center;
     }
     .p-about{
         @apply w-full font-Fira text-gray py-3;
