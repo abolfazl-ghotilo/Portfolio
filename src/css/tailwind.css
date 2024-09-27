@@ -9,6 +9,17 @@
         src: url(/assets/fonts/FiraCode-VariableFont_wght.ttf);
     }
 
+    ::-webkit-scrollbar {
+        width: 3px;
+    }
+    ::-webkit-scrollbar-track {
+        background: #8b919c;
+    }
+    ::-webkit-scrollbar-thumb {
+        background: #333333;
+        border-radius: 5px;
+    }
+
 @layer components{
     .nav-hashtags{
         @apply font-normal text-5xl text-primary font-Fira lg:text-2xl; 
