@@ -29,7 +29,13 @@
         @apply flex items-center justify-between gap-3 w-full pb-5 lg:flex lg:justify-start;
     }
     .P-btn{
-        @apply text-xl text-primary text-center font-Fira py-3 px-6 border-2 border-primary cursor-pointer hover:bg-primary hover:text-white hover:border-white duration-150;
+        @apply self-center text-xl text-primary text-center font-Fira py-3 px-6 border-2 border-primary cursor-pointer hover:text-white hover:border-white transition-all ease-in-out delay-75 bg-transparent hover:-translate-y-1 hover:scale-110 hover:bg-primary duration-300;
+    }
+    .project-info{
+        @apply text-4xl text-white font-medium font-Fira text-center w-full; 
+    }
+    .project-info-name{
+        @apply font-Fira text-gray text-center w-full; 
     }
     .skill-dives{
         @apply flex flex-col items-start w-[50%] h-[120px] border-2 border-gray  bg-transparent; 
