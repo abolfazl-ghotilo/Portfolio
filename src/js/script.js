@@ -4,12 +4,13 @@ let navbar = $.getElementById("navbar")
 let close = $.getElementById("close")
 let mybutton = $.getElementById("gotop");
 
+const form = $.getElementById("form")
 const nameInp = $.getElementById("nameInp")
 const emailInp = $.getElementById("emailInp")
 const titleInp = $.getElementById("titleInp")
 const messageInp = $.getElementById("messageInp")
 const sendInfo = $.getElementById("sendInfo")
-
+let regex = /@+.com/
 
 // window.addEventListener("contextmenu" , (e) => {
 //   e.preventDefault()
@@ -39,16 +40,35 @@ function topFunction() {
   document.body.scrollTop = 0; 
   document.documentElement.scrollTop = 0; 
 }
-sendInfo.addEventListener("click" , () => {
-  clearInp()
-})
 
-function clearInp(){
-  nameInp.value = ""
-  emailInp.value = ""
-  titleInp.value = ""
-  messageInp.value = ""
+form.addEventListener("submit" , function(ev){
+  ev.preventDefault()
+
+  let UserData = {
+    nameInp: nameInp.value,
+    emailInp: emailInp.value,
+    titleInp: titleInp.value,
+    messageInp: messageInp.value
 }
+
+  fetch('https://portfolio-feedback-29eeb-default-rtdb.firebaseio.com/users.json',{
+    method: 'POST',
+    headers: {
+      'Content-Type': 'application/json'
+    },
+    body: JSON.stringify(UserData)
+  })
+  .then(res => res.json)
+  .catch(err => console.error('Error:', err))
+  clear()
+});
+function clear(){
+     nameInp.value = ""
+     emailInp.value = ""
+     titleInp.value = ""
+     messageInp.value = ""
+}
+
 
     AOS.init({
     duration: 800,
