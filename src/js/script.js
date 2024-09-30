@@ -12,9 +12,9 @@ const messageInp = $.getElementById("messageInp")
 const sendInfo = $.getElementById("sendInfo")
 let regex = /@+.com/
 
-window.addEventListener("contextmenu" , (e) => {
-  e.preventDefault()
-})
+// window.addEventListener("contextmenu" , (e) => {
+//   e.preventDefault()
+// })
 
 humbermenu.addEventListener("click" , function(){
     navbar.classList.remove("hidden")
